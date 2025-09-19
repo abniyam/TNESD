@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Abinaya M | Portfolio</title>
+
+  <style>
+
+    body {
+
+      font-family: "Segoe UI", Arial, sans-serif;
+
+      background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+
+      color: #f5f5f5;
+
+      max-width: 700px;
+
+      margin: 40px auto;
+
+      padding: 20px;
+
+      line-height: 1.6;
+
+    }
+
+    h1 {
+
+      color: #55aaff;
+
+      text-align: center;
+
+      font-size: 2.2em;
+
+    }
+
+    h2 {
+
+      color: #88ccff;
+
+      margin-bottom: 8px;
+
+    }
+
+    section {
+
+      margin: 25px 0;
+
+      padding: 15px;
+
+      background: #333;
+
+      border-radius: 12px;
+
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+
+    }
+
+    ul {
+
+      margin-top: 10px;
+
+      padding-left: 25px;
+
+    }
+
+    li {
+
+      margin-bottom: 6px;
+
+    }
+
+    a {
+
+      color: #88ccff;
+
+      text-decoration: none;
+
+    }
+
+    a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    form {
+
+      margin-top: 15px;
+
+      display: flex;
+
+      flex-direction: column;
+
+    }
+
+    input, textarea {
+
+      margin-bottom: 12px;
+
+      padding: 10px;
+
+      border-radius: 6px;
+
+      border: none;
+
+      font-size: 15px;
+
+    }
+
+    button {
+
+      background: #55aaff;
+
+      color: #fff;
+
+      border: none;
+
+      padding: 12px;
+
+      border-radius: 8px;
+
+      font-size: 16px;
+
+      cursor: pointer;
+
+      transition: background 0.3s;
+
+    }
+
+    button:hover {
+
+      background: #4499dd;
+
+    }
+
+    #form-status {
+
+      text-align: center;
+
+      margin-top: 12px;
+
+      font-size: 14px;
+
+      color: #aee0ff;
+
+    }
+
+    .intro {
+
+      text-align: center;
+
+      font-size: 1.1em;
+
+      margin-top: 8px;
+
+      color: #ccc;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Hi, I’m Abinaya M 👋</h1>
+
+  <p class="intro">Balancing work, hobbies, and happy moments with loved ones 💙</p>
+
+  
+
+  <section>
+
+    <h2>About Me</h2>
+
+    <p>You already know how I am — simple, fun-loving, and someone who treasures every small memory. 😊</p>
+
+  </section>
+
+  
+
+  <section>
+
+    <h2>Things I Love</h2>
+
+    <ul>
+
+      <li>🎨 Painting</li>
+
+      <li>🎮 Playing video games</li>
+
+      <li>💫 Spending fun time with my close ones & making beautiful memories together</li>
+
+    </ul>
+
+  </section>
+
+  
+
+  <section>
+
+    <h2>My Projects</h2>
+
+    <p>Right now, I’m working on projects based on <strong>web development</strong>. This portfolio itself is part of my learning journey 🚀</p>
+
+  </section>
+
+  
+
+  <section>
+
+    <h2>Let’s Connect</h2>
+
+    <form id="contact-form">
+
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <textarea id="message" placeholder="Write me a message..." rows="4" required></textarea>
+
+      <button type="submit">Send Message ✨</button>
+
+    </form>
+
+    <div id="form-status"></div>
+
+  </section>
+
+  <script>
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+
+      e.preventDefault();
+
+      var name = document.getElementById('name').value.trim();
+
+      var email = document.getElementById('email').value.trim();
+
+      var message = document.getElementById('message').value.trim();
+
+      var status = document.getElementById('form-status');
+
+      if (!name || !email || !message) {
+
+        status.textContent = 'Please fill in all the fields 🙂';
+
+      } else {
+
+        status.textContent = 'Thank you, ' + name + '! I’ll get back to you soon 💌';
+
+        this.reset();
+
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>
